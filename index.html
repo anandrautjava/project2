@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ग्रामपंचायत चौसाळा</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- TOP INFO BAR -->
+<div class="top-bar">
+
+    <div class="top-left">
+        📞 संपर्क: 9876543210 | ✉️ gpchausala@gmail.com
+    </div>
+
+    <div class="top-right">
+        <span>🕒 वेळ: 10:00 AM - 6:00 PM</span>
+        <span class="divider">|</span>
+        <span>📍 चौसाळा, अमरावती</span>
+    </div>
+
+</div>
+
+<header class="main-header">
+
+    <div class="header-top">
+
+        <div class="logo-area">
+            <img src="https://i.ibb.co/DgLd2bVs/logo.png">
+            <div>
+                <h1>ग्रा. पं. चौसाळा</h1>
+                <p>पं.स अंजनगाव सुर्जी, जि. अमरावती</p>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <span class="tagline">"डिजिटल गाव - स्मार्ट भविष्य"</span>
+        </div>
+
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#">मुख्यपृष्ठ</a>
+        <a href="#">आमच्याबद्दल</a>
+        <a href="#">योजना</a>
+        <a href="#">सूचना</a>
+        <a href="#">गॅलरी</a>
+        <a href="#">संपर्क</a>
+    </nav>
+<!-- BREAKING NEWS BAR -->
+<div class="news-bar">
+
+    <div class="news-label">
+        🔴 महत्वाची सूचना
+    </div>
+
+    <div class="news-scroll">
+        <div class="news-track">
+            <span>📢 ग्रामसभा दिनांक 25 मार्च रोजी आयोजित करण्यात आली आहे</span>
+            <span>📢 पाणी पुरवठा उद्या सकाळी बंद राहील</span>
+            <span>📢 नवीन शासकीय योजना अर्ज सुरू आहेत</span>
+            <span>📢 कर भरण्याची अंतिम तारीख 31 मार्च आहे</span>
+        </div>
+    </div>
+
+</div>
+</header>
+
+<!-- NOTIFICATIONS -->
+<div class="notif green">
+    <span class="dot"></span>
+    <marquee>ग्रामपंचायत चौसाळा मध्ये आपले स्वागत आहे. डिजिटल सेवा सुरू करण्यात आल्या आहेत.</marquee>
+</div>
+
+<div class="notif red">
+    <span class="dot"></span>
+    <marquee>महत्वाची सूचना: कर भरण्याची अंतिम तारीख 31 मार्च आहे.</marquee>
+</div>
+
+<!-- PROGRESS BAR -->
+<section class="progress-section">
+    <h2>मुख्यमंत्री समृद्ध पंचायतराज प्रगती मीटर</h2>
+    <div class="progress-bar">
+        <div class="progress-fill">75%</div>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+
+    <h2>नवीन उपक्रम व माहितीपूर्ण व्हिडिओ</h2>
+
+    <div class="video-container">
+
+        <!-- MAIN VIDEO -->
+        <div class="main-video">
+            <iframe 
+                id="mainVideo"
+                src="https://www.youtube.com/embed/AC-p5q60asc" 
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- SIDE VIDEOS -->
+        <div class="side-videos">
+
+            <div class="video-card" onclick="changeVideo('AC-p5q60asc')">
+                <img src="https://img.youtube.com/vi/AC-p5q60asc/0.jpg">
+                <p>ग्राम विकास माहिती</p>
+            </div>
+
+            <div class="video-card" onclick="changeVideo('UhZAgYPXmCk')">
+                <img src="https://img.youtube.com/vi/UhZAgYPXmCk/0.jpg">
+                <p>सरकारी योजना माहिती</p>
+            </div>
+
+            <div class="video-card" onclick="changeVideo('AC-p5q60asc')">
+                <img src="https://img.youtube.com/vi/AC-p5q60asc/0.jpg">
+                <p>डिजिटल सेवा माहिती</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- NOTICE -->
+<section class="notice">
+    <h2>📢 सूचना फलक</h2>
+
+    <button class="accordion">पाणी पुरवठा</button>
+    <div class="panel">उद्या पाणी बंद राहील</div>
+
+    <button class="accordion">महिला योजना</button>
+    <div class="panel">नोंदणी सुरू आहे</div>
+</section>
+
+<!-- IMAGE -->
+<section class="slider">
+
+    <div class="slides">
+
+        <img src="https://i.ibb.co/PGScx9YY/village.jpg" class="slide active">
+        <img src="https://i.ibb.co/mVxxbKxL/your-image-name.jpg" class="slide">
+        <img src="https://i.ibb.co/PGScx9YY/village.jpg" class="slide">
+
+    </div>
+
+    <!-- BUTTONS -->
+    <button class="prev" onclick="changeSlide(-1)">❮</button>
+    <button class="next" onclick="changeSlide(1)">❯</button>
+
+    <!-- DOTS -->
+    <div class="dots">
+        <span onclick="currentSlide(0)" class="dot active"></span>
+        <span onclick="currentSlide(1)" class="dot"></span>
+        <span onclick="currentSlide(2)" class="dot"></span>
+    </div>
+
+</section>
+<!-- MEMBERS -->
+<section class="members-section">
+
+    <h2>महाराष्ट्र राज्यातील प्रमुख सदस्य</h2>
+
+    <div class="members-grid">
+
+        <div class="member-card">
+            <div class="image-box">
+                <img src="https://i.ibb.co/xqBwpQ8S/member1.png">
+            </div>
+            <div class="member-info">
+                <h3>मा. श्री. अमोल देशमुख</h3>
+                <p>राज्यमंत्री महाराष्ट्र राज्य</p>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="image-box">
+                <img src="https://i.ibb.co/JR8CNQ7J/member2.png">
+            </div>
+            <div class="member-info">
+                <h3>मा. श्री. संतोष पाटील</h3>
+                <p>मुख्यमंत्री प्रतिनिधी</p>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <div class="image-box">
+                <img src="https://i.ibb.co/vCLcgVgT/member3.png">
+            </div>
+            <div class="member-info">
+                <h3>मा. श्री. विजय शिंदे</h3>
+                <p>उपाध्यक्ष ग्रामपंचायत</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- TOP INFO -->
+   <div class="weather-top">
+
+    <!-- LEFT -->
+    <div class="location">
+        <h2>🌦️ ग्रामपंचायत चौसाळा</h2>
+        <p>ता. अंजनगाव सुर्जी, जि. अमरावती</p>
+    </div>
+
+    <!-- CENTER -->
+    <div class="weather-meta">
+        <span>📅 22 मार्च 2026</span>
+        <span>🕒 सकाळी 10:30</span>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="weather-status">
+        <span class="live-dot"></span>
+        <span>Live Weather</span>
+    </div>
+
+</div>
+   <section class="weather-dashboard">
+
+    <!-- HEADER -->
+    <div class="weather-header">
+        <div>
+            <h2>ग्रामपंचायत चौसाळा</h2>
+            <p>अंजनगाव सुर्जी, अमरावती</p>
+        </div>
+
+        <div class="live">
+            <span class="pulse"></span> LIVE
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="weather-main">
+
+        <!-- LEFT -->
+        <div class="current-box">
+            <div class="icon">☀️</div>
+            <div>
+                <h1>32°C</h1>
+                <p>अंशतः ढगाळ वातावरण</p>
+            </div>
+        </div>
+
+        <!-- RIGHT STATS -->
+        <div class="stats">
+            <div>💧 आर्द्रता: 60%</div>
+            <div>🌬️ वारा: 12 km/h</div>
+            <div>🌡️ जाणवते: 34°C</div>
+        </div>
+
+    </div>
+
+    <!-- FORECAST -->
+    <div class="forecast-bar">
+        <div class="day">आज ☀️ 32°</div>
+        <div class="day">उद्या ☀️ 34°</div>
+        <div class="day">बुध ☁️ 31°</div>
+        <div class="day">गुरु ⛈️ 28°</div>
+        <div class="day">शुक्र 🌧️ 29°</div>
+        <div class="day">शनि 🌤️ 30°</div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 ग्रामपंचायत चौसाळा</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
